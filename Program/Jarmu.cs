@@ -27,7 +27,7 @@ namespace Program
             }
         }
         //kor ellenorzese
-        public int Kor
+        public int Kor                  
         {
             get { return kor; }
             set
@@ -80,12 +80,12 @@ namespace Program
             UzemanyagSzint = uzemanyagSzint;
         }
         //kiiras
-        public void Infotad()
+        public virtual void Infotad()
         {
             Console.WriteLine($"{Rendszam}, {Kor} eves a jarmu, {KilometerOra} km-vel.");
         }
 
-        public void Szervizel(int dij)
+        public virtual void Szervizel(int dij)
         {
             if (dij > 100000)
             {
