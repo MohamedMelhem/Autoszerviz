@@ -32,7 +32,7 @@ namespace Tesztek
         {
             Jarmu jarmu = new Jarmu("ABC-123", 5, 200000, 50);
 
-            Assert.That(jarmu.SzervizSzukseges, Is.True);
+            Assert.That(jarmu.Szervizszukseges, Is.True);
         }
 
         [Test]
@@ -40,7 +40,7 @@ namespace Tesztek
         {
             Jarmu jarmu = new Jarmu("ABC-123", 5, 199999, 50);
 
-            Assert.That(jarmu.SzervizSzukseges, Is.False);
+            Assert.That(jarmu.Szervizszukseges, Is.False);
         }
 
         [Test]
