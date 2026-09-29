@@ -14,7 +14,7 @@ namespace Tesztek
         {
             Jarmu jarmu = new Jarmu("", 5, 100000, 50);
 
-            Assert.That(jarmu.Rendszam, Is.EqualTo("ISMERETLEN"));
+            Assert.That(jarmu.Rendszam, Is.EqualTo("Ismertlen"));
         }
 
         [Test]
