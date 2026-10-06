@@ -199,5 +199,13 @@ namespace Tesztek
             Assert.That(auto.KilometerOra, Is.EqualTo(190000));
             Assert.That(auto.AkkumulatorSzint, Is.EqualTo(70));
         }
+        [Test]
+        public void Versenyauto30fellet30()
+        {
+            Versenyauto auto = new Versenyauto("MHMD-777", 8, 1500, 39);
+
+            Assert.That(auto.Futamido, Is.EqualTo(30));
+        }
+
     }
 }
